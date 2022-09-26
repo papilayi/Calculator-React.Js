@@ -7,12 +7,15 @@ const App = () => {
   const handleClick = (e) => {
       setResult(result.concat(e.target.name));
   }
+  // To set field back to empty
   const clear = () => {
       setResult("");
   }
+  // To clear a figure
   const backspace = () => {
       setResult(result.slice(0, -1));
   }
+  // suming up
   const calculate = () => {
     try {
       setResult(eval(result).toString());
